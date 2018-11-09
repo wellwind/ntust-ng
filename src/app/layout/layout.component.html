@@ -1,0 +1,10 @@
+<header>
+  <a *ngIf="!isLogin" [routerLink]="['/login']">Login</a>
+  <a *ngIf="isLogin" href="javascript: void(0)" (click)="logout()">Logout</a>
+  |
+  <a [routerLink]="['/register']">Register</a>
+</header>
+
+<section>
+  <router-outlet></router-outlet>
+</section>

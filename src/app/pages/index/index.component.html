@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let product of products" [title]="product.description">{{ product.name }} (${{ product.price }})</li>
+</ul>
+
+<button *ngIf="isLogin" (click)="checkout()">Checkout</button>
